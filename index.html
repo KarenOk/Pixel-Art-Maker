@@ -1,113 +1,41 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Pixel Art Maker </title>
+        <link rel="icon" href="images/image 2.png" type="image/png" >
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Match Up! </title>
-    <link rel="icon" href="images/images.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <script src="js/script.js"></script>
-    <!-- <script src="js/prefixfree.min.js"></script> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
-</head>
+    <body>
+        <div class="flex-container header">
+            <h1>Pixel Art Maker </h1>
+            <span> <img src="images/image 2.png"  alt="Grid Logo" ></span>
+        </div>
 
-<body>
-    <header class="flex-container">
-        <h1 class="header-title"> MATCH UP! </h1>
-        <img class="header-logo" src="images/images.png">
-    </header>
-
-    <main>
-        <section class="toolbar flex-container">
-            <ul class="rating">
-                <li class="star show"> <i class="fas fa-star"></i> </li class="star">
-                <li class="star show"> <i class="fas fa-star"></i></li class="star">
-                <li class="star show"> <i class="fas fa-star"></i></li class="star">
-                <li class="star"> <i class="fas fa-star"></i></li class="star">
-                <li class="star"> <i class="fas fa-star"></i></li>
-
-            </ul>
-            <div class="refresh">
-                Restart <i class="fas fa-sync-alt"></i>
-            </div>
-            <div class="moves">
-                Moves : <span> 0 </span>
-            </div>
-            <div class="timer">
-                Timer: <span class="time"> 00:00</span>
-            </div>
-        </section>
-
-        <section class="game-container">
-            <ul class="flex-container card-list">
-                <li class="card open">
-                    <i class="fas fa-grin-hearts"></i>
-                </li>
-                <li class="card open">
-                    <i class="fas fa-laugh-wink"></i>
-                </li>
-                <li class="card open">
-                    <i class="far fa-grin-beam"></i>
-                </li>
-                <li class="card open">
-                    <i class="fas fa-flushed"></i>
-                </li>
-                <li class="card open">
-                    <i class="far fa-sad-cry"></i>
-                </li>
-                <li class="card open">
-                    <i class="far fa-grin-tongue"></i>
-                </li>
-                <li class="card open">
-                    <i class="fas fa-grin-hearts"></i>
-                </li>
-                <li class="card open">
-                    <i class="fas fa-laugh-wink"></i>
-                </li>
-                <li class="card open">
-                    <i class="far fa-grin-beam"></i>
-                </li>
-                <li class="card open">
-                    <i class="fas fa-flushed"></i>
-                </li>
-                <li class="card open">
-                    <i class="far fa-sad-cry"></i>
-                </li>
-                <li class="card open">
-                    <i class="far fa-grin-tongue"></i>
-                </li>
-            </ul>
-
-        </section>
-
-        <section class="modal game-over">
-            <div class="body">
-                <div id="close-modal" class="close-modal">
-                    <i class="fas fa-times"></i>
+        <div class="content flex-container" >
+            <div class="get-inputs ">
+                <form id="grid-specs" >
+                    <h3> Choose your Grid Size <img src="images/grid-lines.png"></h3>
+                    <div class="input"> Grid Height:<input type="number" min="1" max="150" name="Height"> </div>
+                    <div class="input"> Grid Width: <input type="number" min="1" max="150" name="Width"> </div>
+                    <input type="submit" value="Submit 🙂">
+                </form>
+                
+                <div id="color-picker" >
+                 <h3> <img src="images/color-picker.png"> Pick a Color  <input type="color" > </h3> 
                 </div>
 
-                <div class="flex-container content">
-                    <img src="images/dance.gif" alt="Dancing Emoji">
-                    <h3> Good job! </h3>
-                    <p class="message">
-                        <!-- <h4> Game over</h4> -->
-                        You finished in <span class="time"> </span>, <span class="moves"> </span> and <span id="stars"> </span>
-                    </p>
-                    <button class="refresh">
-                        Replay <i class="fas fa-sync-alt"> </i>
-                    </button>
-                </div>
             </div>
-        </section>
 
-        <!-- <footer>
-                Karen Okonkwo ©2018
-        </footer> -->
-    </main>
+            <div class="canvas">
+                <table> </table>
+            </div>    
+        </div>
 
-</body>
+        <script src="index.js"></script>
+    </body>
 
 </html>
