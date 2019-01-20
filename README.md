@@ -1,26 +1,32 @@
-# Classic Arcade Game
-My rendition of the popular arcade game _Frogger_.
+# Match Up!
 
-### How To Play
-- The aim of this game is to get the player to the water as many times as you can before for the countdown stops, while also avoiding the enemy bugs.
-- Use the arrow keys to move the player left, right, up or down.
-- Colliding with an enemy bug resets your position.
+This project is an online game that tests your ability to remember.
 
-### Demo 
-![Game Demo](images/demo.gif)
+### Description
 
-### Get Started
-Click [here](https://karenok.github.io/classic-arcade-game) to play.
-Please note that the game starts immediately it loads.
+This game consists of several cards that are shown briefly before they are faced down. 
+Your task is to find matching pairs of cards by trying to recollect positions of similar cards.
+The game ends when all the cards have been **_Matched Up!_** :laughing:
 
-### Built With
+
+### Sample 
+A sample of the game's features are shown below.
+![Project Sample](images/sample.png)
+
+### Getting Started
+A browser together with good internet connection is important for the best experience.
+Click [here](https://karenok.github.io/match-up/) to begin.
+
+### Built With 
 - HTML
 - CSS
 - JavaScript
 
-### Bugs or Glitches?
-Notice any bugs or glitches? Please contact me [here](mailto:karenokonkwo29@gmail.com). I'm interested in you having the best experience playing this game. 
+### Complaints
+Notice any bugs or glitches? Do well to send me an [email](mailto:karenokonkwo29@gmail.com). Thank you.
 
-### Author
+### Author 
 - Karen Okonkwo (2018)
+
+
 
